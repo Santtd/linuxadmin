@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración Avanzada de Linux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Administración Avanzada de Linux</h1>
+        <div class="linux-link">
+            <a href="https://www.linux.org" target="_blank">🌐 Visitar Sitio Oficial de Linux</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Introducción</a></li>
+            <li><a href="#terminal">Terminal Avanzada</a></li>
+            <li><a href="#procesos">Gestión de Procesos</a></li>
+            <li><a href="#redes">Redes y Seguridad</a></li>
+            <li><a href="#scripts">Scripts y Automatización</a></li>
+            <li><a href="#galeria">Galería Linux</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduccion">
+            <h2>Introducción a la Administración Linux</h2>
+            <div class="image-container">
+                <img src="images/linuxad.jpg" alt="Administración de Linux" class="content-image">
+                <p class="image-caption">Interfaz de administración de servidor Linux</p>
+            </div>
+            <p>La administración avanzada de Linux implica el manejo de sistemas operativos Linux en entornos profesionales y empresariales.</p>
+            <p>Un administrador de sistemas Linux debe conocer herramientas avanzadas para optimizar, asegurar y mantener servidores.</p>
+        </section>
+
+        <section id="terminal">
+            <h2>Terminal y Comandos Avanzados</h2>
+            <div class="image-container">
+                <img src="images/terminal.png"
+                alt="Terminal de Linux" class="content-image">
+                <p class="image-caption">Terminal de comandos de Linux</p>
+            </div>
+            <p>La terminal es la herramienta principal para administrar sistemas Linux. Comandos esenciales:</p>
+            <ul>
+                <li><code>grep</code> - Buscar patrones en archivos</li>
+                <li><code>awk</code> - Procesamiento de texto avanzado</li>
+                <li><code>sed</code> - Editor de flujo de texto</li>
+                <li><code>ssh</code> - Conexión remota segura</li>
+                <li><code>rsync</code> - Sincronización de archivos</li>
+            </ul>
+        </section>
+
+        <section id="procesos">
+            <h2>Gestión de Procesos y Servicios</h2>
+            </div>
+            <p>Administración eficiente de procesos del sistema:</p>
+            <ul>
+                <li><strong>systemd:</strong> Sistema de inicio y gestión de servicios</li>
+                <li><strong>journalctl:</strong> Visualización de logs del sistema</li>
+                <li><strong>cron:</strong> Programación de tareas automáticas</li>
+                <li><strong>top/htop:</strong> Monitoreo de procesos en tiempo real</li>
+            </ul>
+        </section>
+
+        <section id="redes">
+            <h2>Redes y Seguridad</h2>
+            </div>
+            <p>Configuración y protección de redes en Linux:</p>
+            <ul>
+                <li>Configuración de firewall con <code>iptables</code> o <code>ufw</code></li>
+                <li>Monitoreo de red con <code>netstat</code>, <code>ss</code>, <code>tcpdump</code></li>
+                <li>Configuración de servidores SSH seguros</li>
+                <li>Gestión de usuarios y permisos avanzados</li>
+                <li>Configuración de SELinux/AppArmor</li>
+            </ul>
+        </section>
+
+        <section id="scripts">
+            <h2>Scripts y Automatización</h2>
+            <div class="image-container">
+                <img src="images/script.jpg" alt="Scripts de Linux" class="content-image">
+                <p class="image-caption">Editor de scripts en Linux</p>
+            </div>
+            <p>Automatización de tareas mediante scripts Bash:</p>
+            <pre><code>#!/bin/bash
+# Script de ejemplo: Backup automático
+BACKUP_DIR="/backup"
+SOURCE_DIR="/home/usuario/datos"
+DATE=$(date +%Y%m%d)
+
+# Crear backup
+tar -czf "$BACKUP_DIR/backup_$DATE.tar.gz" "$SOURCE_DIR"
+
+# Verificar éxito
+if [ $? -eq 0 ]; then
+    echo "Backup completado: backup_$DATE.tar.gz"
+else
+    echo "Error en el backup"
+fi</code></pre>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Imágenes Linux</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/ubuntu.png" alt="Escritorio Linux 1">
+                    <p>Distribución Ubuntu</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Fedora.png" alt="Escritorio Linux 2">
+                    <p>Distribución Fedora</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/debian.jpg" alt="Escritorio Linux 3">
+                    <p>Distribución Debian</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Recursos recomendados: Linux Foundation, Red Hat, Ubuntu Server Guide</p>
+        <div class="footer-links">
+            <a href="https://www.linux.org" target="_blank">Sitio Oficial Linux</a> | 
+            <a href="https://www.kernel.org" target="_blank">Linux Kernel</a> 
+        </div>
+        <p class="copyright"> Administración Linux - Recursos educativos</p>
+    </footer>
+</body>
+</html>
